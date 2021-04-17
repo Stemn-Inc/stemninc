@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>TV Mount</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+p { 
+
+text-align: center;
+ }
+
+h2 {
+  text-align: center; 
+  color: #1C55FF;
+}
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="header" onclick="window.location.href='">
+  <h1 id="logo"><a href="file:///Users/sabah/Desktop/Desktop/public_html/home.html"><img src="logo.jpg" alt="logo"/></a></h1>
+
+</div>
+
+<div class="w3-container">
+  <h2>TV Mount</h2>
+  <p style="color:#1C55FF;">Out State of the Act TV mounting technology leaves your wall with less damage then the other guys.</p>
+  
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="Image-1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="holes.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="wallbracket.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="mount.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="tvbracket.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="tvup.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</body>
+</html>
